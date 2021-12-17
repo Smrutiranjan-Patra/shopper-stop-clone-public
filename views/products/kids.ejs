@@ -1,0 +1,352 @@
+<%- include('../partials/metadata', {stylesheet: "../css/kids.css" , footer: "../css/footer.css" ,
+  header:"../css/header.css"}); %>
+
+  <body onload="senddata(`<%=JSON.stringify(product)%>`, `<%=type%>`, `<%=totalPages%>`,`<%=page%>`)">
+    <%- include('../partials/header', {}); %>
+      <div class="slideshow-container">
+        <div style="color: gray; margin-bottom: 10px;">Home / Kids / Clothing</div>
+        <div class="mySlides fade" style="display: none;">
+          <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/2f1eb5daa5976__Hamleys---WEB---PLP.jpg">
+        </div>
+        <div class="mySlides fade" style="display: none;">
+          <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/29e2d3318e68e__Mothercare--WEB---PLP.jpg">
+        </div>
+        <div class="mySlides fade" style="display: block;">
+          <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/56de27d6790c__plp-----ruff----static.jpg">
+        </div>
+      </div>
+      <br>
+      <div style="text-align: center; margin-top: -50px; position: relative">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot active" onclick="currentSlide(3)"></span>
+      </div>
+      <div id="all">
+        <div id="leftpart">
+          <hr>
+          <h4 class="left-option"><a href="#" id="option11">CATEGORIES &nbsp;<i class="fas fa-chevron-down" id="arrow11"
+                style="margin-left: 104px;"></i></a>
+          </h4>
+          <div id="st11">
+            <li><input id="Accessories" type="checkbox" class="sh subcatsort"><label for="check">Accessories
+                (70)</label>
+            </li>
+            <li><input id="Bottomwear" type="checkbox" class="sh subcatsort"><label for="check">Bottomwear (592)</label>
+            </li>
+            <li><input id="Combo Sets" type="checkbox" class="sh subcatsort"><label for="check">Combo Sets (13)</label>
+            </li>
+            <li><input id="Indianwear" type="checkbox" class="sh subcatsort"><label for="check">Indianwear (233)</label>
+            </li>
+            <li><input id="Innerwear" type="checkbox" class="sh subcatsort"><label for="check">Innerwear & Nightwear
+                (19)</label></li>
+            <li><input id="Suits & Blazers" type="checkbox" class="sh subcatsort"><label for="check">Suits & Blazers
+                (7)</label></li>
+            <li><input id="Topwear" type="checkbox" class="sh subcatsort"><label for="check">Topwear (1,429)</label>
+            </li>
+            <li><input id="Winterwear" type="checkbox" class="sh subcatsort"><label for="check">Winterwear (266)</label>
+            </li>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option12">SUB-CATEGORIES &nbsp;<i class="fas fa-chevron-down"
+                id="arrow12" style="margin-left: 77px;"></i></a></h4>
+          <div id="st12">
+            <li></li><input id="Briefs" type="checkbox" class="sh subcatsort"><label for="check">Briefs (10)</label>
+            </li>
+            <li><input id="Caps" type="checkbox" class="sh subcatsort"><label for="check">Caps (1)</label></li>
+            <li><input id="Dhoti Kurta Set" type="checkbox" class="sh subcatsort"><label for="check">Dhoti Kurta Set
+                (47)</label></li>
+            <li><input id="Jackets" type="checkbox" class="sh subcatsort"><label for="check">Jackets (55)</label></li>
+            <li><input id="Jeans" type="checkbox" class="sh subcatsort">
+              <abel for="check">Jeans (171)</label>
+            </li>
+            <li><input id="Kurta Pyjama Jacket Set" type="checkbox" class="sh subcatsort"><label for="check">Kurta
+                Pyjama
+                Jacket Set (70)</label></li>
+            <li><input id="Kurta Pyjama Set" type="checkbox" class="sh subcatsort"><label for="check">Kurta Pyjama Set
+                (76)</label></li>
+            <li><input id="Mask" type="checkbox" class="sh subcatsort"><label for="check">Mask (60)</label></li>
+            <li><input id="Nehru Jackets" type="checkbox" class="sh subcatsort"><label for="check">Nehru Jackets
+                (37)</label></li>
+            <li><input id="Pullover" type="checkbox" class="sh subcatsort"><label for="check">Pullover (14)</label></li>
+            <li><input id="Shirts" type="checkbox" class="sh subcatsort"><label for="check">Shirts (369)</label></li>
+            <li><input id="Shorts & Dungarees" type="checkbox" class="sh subcatsort"><label for="check">Shorts &
+                Dungarees
+                (155)</label></li>
+            <li><input id="Socks & Scarfs" type="checkbox" class="sh subcatsort"><label for="check">Socks & Scarfs
+                (9)</label></li>
+            <li><input id="Sweatshirts" type="checkbox" class="sh subcatsort"><label for="check">Sweatshirts
+                (178)</label>
+            </li>
+            <li><input id="T-Shirts" type="checkbox" class="sh subcatsort"><label for="check">T-Shirts (746)</label>
+            </li>
+            <li><input id="Track Pants" type="checkbox" class="sh subcatsort"><label for="check">Track Pants
+                (102)</label>
+            </li>
+            <li><input id="Trousers" type="checkbox" class="sh subcatsort"><label for="check">Trousers (99)</label></li>
+            <li><input id="Vests" type="checkbox" class="sh subcatsort"><label for="check">Vests (3)</label></li>
+
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option13">BRANDS &nbsp;&nbsp;<i class="fas fa-chevron-down"
+                id="arrow13" style="margin-left: 125px;"></i></a></h4>
+          <div id="st13">
+            <li>
+              <div style="display: flex;"><input id="sb" type="text" placeholder="Search Brands..." /><i
+                  class="fas fa-search"></i></div>
+            </li>
+            <li></li><input type="checkbox" id="ADIDAS" class="sh brand"><label for="check">ADIDAS (20)</label></li>
+            <li><input type="checkbox" id="ALLEN SOLLY" class="sh brand"><label for="check">ALLEN SOLLY (175)</label>
+            </li>
+            <li><input type="checkbox" id="AND GIRL" class="sh brand"><label for="check">AND GIRL (1)</label></li>
+            <li><input type="checkbox" id="ANGEL & ROCKET" class="sh brand"><label for="check">ANGEL & ROCKET
+                (161)</label>
+            </li>
+            <li><input type="checkbox" id="ARIANA" class="sh brand"><label for="check">ARIANA (46)</label></li>
+            <li><input type="checkbox" id="CAVIO" class="sh brand"><label for="check">CAVIO (31)</label></li>
+            <li><input type="checkbox" id="CHARCHIT" class="sh brand"><label for="check">CHARCHIT (41)</label></li>
+            <li><input type="checkbox" id="GINI & JONY" class="sh brand"><label for="check">GINI & JONY (581)</label>
+            </li>
+            <li><input type="checkbox" id="GO COLORS" class="sh brand"><label for="check">GO COLORS (1)</label></li>
+            <li><input type="checkbox" id="INDIAN TERRAIN" class="sh brand"><label for="check">INDIAN TERRAIN
+                (22)</label>
+            </li>
+            <li><input type="checkbox" id="INFUSE" class="sh brand"><label for="check">INFUSE (35)</label></li>
+            <li><input type="checkbox" id="JOCKEY" class="sh brand"><label for="check">JOCKEY (14)</label></li>
+            <li><input type="checkbox" id="KARROT" class="sh brand"><label for="check">KARROT (15)</label></li>
+            <li><input type="checkbox" id="KIDSVILLE" class="sh brand"><label for="check">KIDSVILLE (19)</label></li>
+            <li><input type="checkbox" id="LIFE" class="sh brand"><label for="check">LIFE (194)</label></li>
+            <li><input type="checkbox" id="MONTE CARLO" class="sh brand"><label for="check">MONTE CARLO (40)</label>
+            </li>
+            <li><input type="checkbox" id="MOTHERCARE" class="sh brand"><label for="check">MOTHERCARE (22)</label></li>
+            <li><input type="checkbox" id="MUDO" class="sh brand"><label for="check">MUDO (33)</label></li>
+            <li><input type="checkbox" id="NINO BAMBINO" class="sh brand"><label for="check">NINO BAMBINO (1)</label>
+            </li>
+            <li><input type="checkbox" id="PEPE KIDS" class="sh brand"><label for="check">PEPE KIDS (146)</label></li>
+            <li><input type="checkbox" id="PEPPERMINT" class="sh brand"><label for="check">PEPPERMINT (1)</label></li>
+            <li><input type="checkbox" id="PUMA" class="sh brand"><label for="check">PUMA (92)</label></li>
+            <li><input type="checkbox" id="RUFF" class="sh brand"><label for="check">RUFF (60)</label></li>
+            <li><input type="checkbox" id="STOP" class="sh brand"><label for="check">STOP (269)</label></li>
+            <li><input type="checkbox" id="TALES & STORIES" class="sh brand"><label for="check">TALES & STORIES
+                (152)</label></li>
+            <li><input type="checkbox" id="TINY GIRL" class="sh brand"><label for="check">TINY GIRL (1)</label></li>
+            <li><input type="checkbox" id="U.S. POLO ASSN." class="sh brand"><label for="check">U.S. POLO ASSN.
+                (82)</label>
+            </li>
+            <li><input type="checkbox" id="UNDER FOURTEEN ONLY" class="sh brand"><label for="check">UNDER FOURTEEN ONLY
+                (124)</label></li>
+            <li><input type="checkbox" id="UNITED COLORS OF BENETTON" class="sh brand"><label for="check">UNITED COLORS
+                OF
+                BENETTON (84)</label></li>
+            <li><input type="checkbox" id="VASTRAMAY" class="sh brand"><label for="check">VASTRAMAY (170)</label></li>
+            <li><input type="checkbox" id="VIP" class="sh brand"><label for="check">VIP (2)</label></li>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option14">OFFERS &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"
+                id="arrow14" style="margin-left: 126px;"></i></a></h4>
+          <div id="st14">
+            <li></li><input type="checkbox" id="Flat 30% Off" class="sh discountsort"><label for="check">Flat 30% Off
+              (330)</label></li>
+            <li><input type="checkbox" id="Flat 25% Off" class="sh discountsort"><label for="check">Flat 25% Off
+                (182)</label></li>
+            <li><input type="checkbox" id="Flat 10% Off" class="sh discountsort"><label for="check">Flat 10% Off
+                (40)</label></li>
+            <li><input type="checkbox" id="Flat 51% Off" class="sh discountsort"><label for="check">Flat 51% Off
+                (13)</label></li>
+            <li><input type="checkbox" id="Flat 899/-" class="sh discountsort"><label for="check">Flat 899/- (3)</label>
+            </li>
+            <li><input type="checkbox" id="Flat 21% Off" class="sh discountsort"><label for="check">Flat 21% Off
+                (133)</label></li>
+            <li><input type="checkbox" id="Flat 25% Off" class="sh discountsort"><label for="check">Flat 25% Off
+                (77)</label></li>
+            <li><input type="checkbox" id="Flat Rs. 199/-" class="sh discountsort"><label for="check">Flat Rs. 199/-
+                (13)</label></li>
+            <li><input type="checkbox" id="Flat Rs. 299/-" class="sh discountsort"><label for="check">Flat Rs. 299/-
+                (11)</label></li>
+            <li><input type="checkbox" id="Flat 15% Off" class="sh discountsort"><label for="check">Flat 15% Off
+                (121)</label></li>
+            <li><input type="checkbox" id="Flat 35% Off" class="sh discountsort"><label for="check">Flat 35% Off
+                (190)</label></li>
+            <li><input type="checkbox" id="Flat 30% Off" class="sh discountsort"><label for="check">Flat 30% Off
+                (91)</label></li>
+            <li><input type="checkbox" id="Flat 599/-" class="sh discountsort"><label for="check">Flat 599/- (2)</label>
+            </li>
+            <li><input type="checkbox" id="Flat 799/-" class="sh discountsort"><label for="check">Flat 799/-
+                (11)</label>
+            </li>
+            <li><input type="checkbox" id="Flat 999/-" class="sh discountsort"><label for="check">Flat 999/-
+                (16)</label>
+            </li>
+            <li><input type="checkbox" id="Flat 499/-" class="sh discountsort"><label for="check">Flat 499/- (4)</label>
+            </li>
+            <li><input type="checkbox" id="Flat 399/-" class="sh discountsort"><label for="check">Flat 399/- (2)</label>
+            </li>
+            <li><input type="checkbox" id="Flat Rs. 599/-" class="sh discountsort"><label for="check">Flat Rs. 599/-
+                (1)</label></li>
+            <li><input type="checkbox" id="Flat Rs. 99/-" class="sh discountsort"><label for="check">Flat Rs. 99/-
+                (2)</label></li>
+            <li><input type="checkbox" id="Flat 20% Off" class="sh discountsort"><label for="check">Flat 20% Off</label>
+            </li>
+            <li><input type="checkbox" id="Flat Rs. 399/-" class="sh discountsort"><label for="check">Flat Rs. 399/-
+                (2)</label></li>
+            <li><input type="checkbox" id="Flat Rs. 499/-" class="sh discountsort"><label for="check">Flat Rs. 499/-
+                (3)</label></li>
+            <li><input type="checkbox" id="BUY FOR Rs.2999 GET Rs.500 OFF" class="sh discountsort"><label
+                for="check">BUY
+                FOR Rs.2999 GET Rs.500 OFF (161)</label></li>
+            <li><input type="checkbox" id="BUY FOR Rs.5000 GET Rs.1000 OFF" class="sh discountsort"><label
+                for="check">BUY
+                FOR Rs.5000 GET Rs.1000 OFF (161)</label></li>
+            <li><input type="checkbox" id="Buy for Rs.3499 and get Flat Rs.500 off" class="sh discountsort"><label
+                for="check">Buy for Rs.3499 and get Flat Rs.500 off (80)</label></li>
+            <li><input type="checkbox" id="Buy for Rs.4999 and get Flat Rs.750 off" class="sh discountsort"><label
+                for="check">Buy for Rs.4999 and get Flat Rs.750 off (59)</label></li>
+            <li><input type="checkbox" id="Buy for Rs.5999 and get Flat Rs.1000 off" class="sh discountsort"><label
+                for="check">Buy for Rs.5999 and get Flat Rs.1000 off (21)</label></li>
+            <li><input type="checkbox" id="Buy for Rs.6999 and get Flat Rs.1000 off" class="sh discountsort"><label
+                for="check">Buy for Rs.6999 and get Flat Rs.1000 off (59)</label></li>
+            <li><input type="checkbox" id="Buy for Rs.9999 and get Flat Rs.2000 off" class="sh discountsort"><label
+                for="check">Buy for Rs.9999 and get Flat Rs.2000 off (59)</label></li>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option15">SIZE &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"
+                id="arrow15" style="margin-left: 142px;"></i></a></h4>
+          <div id="st15">
+            <li></li><input id="0" type="checkbox" class="sh sizesort"><label for="check">0 (32)</label></li>
+            <li><input id="1" type="checkbox" class="sh sizesort"><label for="check">1 (185)</label></li>
+            <li><input id="10" type="checkbox" class="sh sizesort"><label for="check">10 (638)</label></li>
+            <li><input id="10 to 12 Years" type="checkbox" class="sh sizesort"><label for="check">10 to 12 Years
+                (14)</label></li>
+            <li><input id="10-11 Years" type="checkbox" class="sh sizesort"><label for="check"></label>10-11 Years (104)
+            </li>
+            <li><input id="10-13 Years" type="checkbox" class="sh sizesort"><label for="check"></label>10-13 Years (38)
+            </li>
+            <li><input id="11" type="checkbox" class="sh sizesort"><label for="check">11 (538)</label></li>
+            <li><input id="11-12 Y" type="checkbox" class="sh sizesort"><label for="check">11-12 Y (102)</label></li>
+            <li><input id="11-12 Years" type="checkbox" class="sh sizesort"><label for="check">11-12 Years (167)</label>
+            </li>
+            <li><input id="11-12Y" type="checkbox" class="sh sizesort"><label for="check">11-12Y (164)</label></li>
+            <li><input id="12" type="checkbox" class="sh sizesort"><label for="check">12 (609)</label></li>
+            <li><input id="12-14 Years" type="checkbox" class="sh sizesort"><label for="check">12-14 Years (73)</label>
+            </li>
+            <li><input id="12-18 Months" type="checkbox" class="sh sizesort"><label for="check">12-18 Months
+                (324)</label>
+            </li>
+            <li><input id="13" type="checkbox" class="sh sizesort"><label for="check">13 (398)</label></li>
+            <li><input id="13-14 Y" type="checkbox" class="sh sizesort"><label for="check">13-14 Y (102)</label></li>
+            <li><input id="13-14 Years" type="checkbox" class="sh sizesort"><label for="check">13-14 Years (88)</label>
+            </li>
+            <li><input id="13-14Y" type="checkbox" class="sh sizesort"><label for="check">13-14Y (143)</label></li>
+            <li><input id="14" type="checkbox" class="sh sizesort"><label for="check">14 (533)</label></li>
+            <li><input id="15" type="checkbox" class="sh sizesort"><label for="check">15 (133)</label></li>
+            <li><input id="16" type="checkbox" class="sh sizesort"><label for="check">16 (372)</label></li>
+            <li><input id="18" type="checkbox" class="sh sizesort"><label for="check">18 (20)</label></li>
+            <li><input id="18-24 Months" type="checkbox" class="sh sizesort"><label for="check">18-24 Months
+                (303)</label>
+            </li>
+            <li><input id="2" type="checkbox" class="sh sizesort"><label for="check">2 (436)</label></li>
+            <li><input id="2 Years" type="checkbox" class="sh sizesort"><label for="check">2 Years (1)</label></li>
+            <li><input id="2 to 5 Years" type="checkbox" class="sh sizesort"><label for="check">2 to 5 Years
+                (16)</label>
+            </li>
+            <li><input id="2-3 Y" type="checkbox" class="sh sizesort"><label for="check">2-3 Y (93)</label></li>
+            <li><input id="2-3 Years" type="checkbox" class="sh sizesort"><label for="check">2-3 Years (99)</label></li>
+            <li><input id="2-3Y" type="checkbox" class="sh sizesort"><label for="check">2-3Y (174)</label></li>
+            <li><input id="2-4 Years" type="checkbox" class="sh sizesort"><label for="check">2-4 Years (39)</label></li>
+            <li><input id="20" type="checkbox" class="sh sizesort"><label for="check">20 (24)</label></li>
+            <li><input id="22" type="checkbox" class="sh sizesort"><label for="check">22 (23)</label></li>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option4">COLORS &nbsp;&nbsp;<i class="fas fa-chevron-down" id="arrow4"
+                style="margin-left: 123px;"></i></a></h4>
+          <div id="color">
+            <ul>
+              <li id="beige" class="colorselect"><a href="#">Beige</a></li>
+              <li id="black" class="colorselect"><a href="#">Black</a></li>
+              <li id="blue" class="colorselect"><a href="#">Blue</a></li>
+              <li id="brown" class="colorselect"><a href="#">Brown</a></li>
+              <li id="green" class="colorselect"><a href="#">Green</a></li>
+              <li id="gray" class="colorselect"><a href="#">Gray</a></li>
+              <li id="orange" class="colorselect"><a href="#">Orange</a></li>
+              <li id="pink" class="colorselect"><a href="#">Pink</a></li>
+              <li id="purple" class="colorselect"><a href="#">Purple</a></li>
+              <li id="red" class="colorselect"><a href="#">Red</a></li>
+              <li id="white" class="colorselect"><a href="#">White</a></li>
+              <li id="yellow" class="colorselect"><a href="#">Yellow</a></li>
+              <li id="navy" class="colorselect"><a href="#">Navy</a></li>
+            </ul>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option16">DELIVERY TYPE &nbsp;&nbsp;<i class="fas fa-chevron-down"
+                id="arrow16" style="margin-left: 87px;"></i></a></h4>
+          <div id="st16">
+            <li><input type="checkbox" class="sh subcatsort"><label for="check">Express Store Pick up (13,181)</label>
+            </li>
+          </div>
+          <hr>
+          <h4 class="left-option"><a href="#" id="option17">PRICE &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"
+                id="arrow17" style="margin-left: 135px;"></i></a></h4>
+          <div id="st17">
+            <li><input type="checkbox" class="sh pricerange" id="51-100"><label for="check">51-100 (3)</label></li>
+            <li><input type="checkbox" class="sh pricerange" id="101-500"><label for="check">101-500 (606)</label></li>
+            <li><input type="checkbox" class="sh pricerange" id="501-1000"><label for="check">501-1000 (1241)</label>
+            </li>
+            <li><input type="checkbox" class="sh pricerange" id="1001-2000"><label for="check">1001-2000 (680)</label>
+            </li>
+            <li><input type="checkbox" class="sh pricerange" id="2001-3000"><label for="check">2001-3000 (67)</label>
+            </li>
+            <li><input type="checkbox" class="sh pricerange" id="3001-5000"><label for="check">3001-5000 (38)</label>
+            </li>
+          </div>
+          <hr>
+          <h4 style="margin-left: -70px;">Enter a price range</h4>
+          <div id="st16" style="display: inline-block;gap: 18px; height:50px">
+            <li><input id="minamount" style="width:40%" type="text" placeholder="₹">&nbsp;to
+              <input id="maxamount" style="width:40%" type="text" placeholder="₹">
+            </li>
+          </div>
+          <div>
+            <button id="refinesearch" type="submit" class="button-75" role="button"><span class="text">REFINE
+                SEARCH</span></button>
+          </div>
+
+        </div>
+        <div id="rightpart">
+          <div id="topsortbar">
+            <h2 id="category text">Kids</h2>
+            <div id="topsorting">
+              <div>
+                <p>Sort by:</p>
+              </div>
+              <div><button id="relevence">Relevance</button>|</div>
+              <div><button id="Popular">Popular</button>|</div>
+              <div><button id="New">New</button>|</div>
+              <div><button id="Discount">Discount</button>|</div>
+              <div><button id="Best_Seller">Best Seller</button>|</div>
+              <div>
+                Price:<button id="sortlow">Low</button>|<button id="sorthigh">
+                  High
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+
+
+          <div id="product_container"></div>
+          <div id="paginationcontainer" class="pagination_section"></div>
+        </div>
+      </div>
+      <hr>
+      <div id="foo">
+        <%- include('../partials/footer', {}); %>
+      </div>
+  </body>
+
+  </html>
+
+  <script src="../script/kids.js"></script>
+  <script src="../script/signin.js"></script>

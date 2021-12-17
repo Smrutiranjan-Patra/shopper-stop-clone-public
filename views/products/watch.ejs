@@ -1,0 +1,61 @@
+<%- include('../partials/metadata', {stylesheet: "../css/men.css", footer: "../css/footer.css", header:"../css/header.css"}); %>
+<body onload = "senddata(`<%=JSON.stringify(product)%>`, `<%=type%>`, `<%=totalPages%>`,`<%=page%>`)">
+  <%- include('../partials/header', {}); %>
+  <div class="slideshow-container">
+    <div style="color: gray; margin-bottom: 10px;">Home / Watches</div>
+    <div class="mySlides fade" style="display: none;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/1bb4fd8f29970__PLP-1232X216_Swarovski.jpg">
+    </div>
+    <div class="mySlides fade" style="display: none;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/33f751d0d7da3__Plp-Varanga-Static.jpg">
+    </div>
+    <div class="mySlides fade" style="display: block;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/15cd4403d16c1__PLP-Static__2_.jpg">
+    </div>
+</div>
+<br>
+<div style="text-align: center; margin-top: -50px; position: relative">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot active" onclick="currentSlide(3)"></span>
+</div>
+    <div id="all">
+      <%- include('../partials/leftsort', {}); %>
+    <div id="rightpart">
+    <div id="topsortbar">
+      <h2 id="category text">Watch</h2>
+      <div id="topsorting">
+        <div>
+          <p>Sort by:</p>
+        </div>
+        <div><button id="relevence">Relevance</button>|</div>
+        <div><button id="Popular">Popular</button>|</div>
+        <div><button id="New">New</button>|</div>
+        <div><button id="Discount">Discount</button>|</div>
+        <div><button id="Best_Seller">Best Seller</button>|</div>
+        <div>
+          Price:<button id="sortlow">Low</button>|<button id="sorthigh">
+            High
+          </button>
+        </div>
+      </div>
+      <hr />
+      
+    </div>
+    <hr>
+
+
+    <div id="product_container"></div>
+    <div id="paginationcontainer" class="pagination_section"></div>
+  </div>
+</div>
+<div id="foo">
+      <%- include('../partials/footer', {}); %>
+</div>
+</body>
+</html>
+<script src="../script/signin.js"></script>
+<script src="../script/men.js"></script>

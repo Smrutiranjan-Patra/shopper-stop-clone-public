@@ -1,0 +1,101 @@
+
+<%- include('../partials/metadata', {stylesheet: "../css/pro_des.css", footer: "../css/footer.css", header:false}); %>
+<script src="../script/pro_description.js"></script>
+ <body onload="send(`<%=JSON.stringify(product)%>`)">
+  
+    <div id="topofpage">
+      <i id="backpage" class="material-icons" style="font-size: 36px"
+        >chevron_left</i
+      >
+      <div id="mainimg">
+        <a href="/"
+          ><img
+            src="https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/sslogo.svg"
+        /></a>
+      </div>
+    </div>
+
+    <div id="nav"></div>
+    <div class="cont">
+      <div id="smallimg" class="small-imgs"></div>
+      <div id="main" class="main-imgs">
+        <img id="imgbox" />
+      </div>
+      <div class="text">
+        <h1 id="brandname"></h1>
+        <p id="title" class="type"></p>
+        <div id="price-box" class="price-box"></div>
+
+        <h5>SELECT SIZE</h5>
+        <div class="size">
+          <div class="size-select" id="smallslim">SLIM</div>
+          <div class="size-select" id="mediumslim">MEDIUM SLIM</div>
+          <div class="size-select" id="largeslim">LARGE SLIM</div>
+          <div class="size-select" id="xl">XL REGULAR</div>
+        </div>
+        <div class="bag" id="addtocart">ADD TO BAG</div>
+        <div class="icon-box">
+          <div class="icon">
+            <i class="fas fa-medal"></i>
+            <p class="I-text">100% Authentic Products</p>
+          </div>
+          <div class="line"></div>
+          <div class="icon">
+            <i class="fas fa-shipping-fast"></i>
+            <p class="I-text ship">Free Shipping*</p>
+          </div>
+          <div class="line"></div>
+          <div class="icon">
+            <i class="fas fa-people-carry"></i>
+            <p class="I-text">Express Store Pick Up</p>
+          </div>
+        </div>
+        <h3>Delivery Services</h3>
+        <p class="p-text">
+          Enter your Pincode to check the delivery time and free pick up options
+        </p>
+        <input type="text" placeholder="Enter Pincode" /><span
+          style="color: orangered"
+          >Check</span
+        >
+        <div class="icon1">
+          <i class="fas fa-truck"></i>
+          <h5>DELIVERY</h5>
+        </div>
+        <p class="p-text">Cash on delivery may be available *</p>
+        <hr />
+        <div class="icon1">
+          <i class="fas fa-store"></i>
+          <h5>EXPRESS STORE PICK UP</h5>
+          <div id="new">NEW</div>
+        </div>
+        <p class="p-text p1">Can't wait for your order? Get it early!</p>
+        <p class="p-text p1">
+          Please select size and pin code to see availability at your nearest
+          store
+        </p>
+
+        
+        <hr />
+        <div class="icon1">
+          <i class="fas fa-reply"></i>
+          <h5>14 DAYS EASY RETURNS AND EXCHANGE</h5>
+        </div>
+        <p class="p-text">
+          We offer free and easy return to get 100% refund and exchange through
+          courier pickup or you can exchange most items bought online at any of
+          our stores.&nbsp;&nbsp;<span id="policy"
+            >Click here for our Return and Exchange policy</span
+          >
+        </p>
+      </div>
+    </div>
+    <div id="productdes" style="margin-top: 20px">Product Description: .</div>
+    <div id="foo">
+      <%- include('../partials/footer', {}); %>
+    </div>
+
+
+  </body>
+</html>
+

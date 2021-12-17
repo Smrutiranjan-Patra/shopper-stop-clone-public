@@ -1,0 +1,952 @@
+#header {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+header {
+  padding: 1rem;
+  display: flex;
+  width: 80%;
+  height: 30px;
+  margin: 0 10em;
+}
+
+#left-header {
+  width: 1.5%;
+  float: left;
+  display: flex;
+  margin: 10px;
+}
+#left-header p {
+  text-align: center;
+  margin: 2px -16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: grey;
+}
+
+#right-header {
+  display: flex;
+  margin: 0 0 0 35%;
+}
+
+#searchinput {
+  width: 300px;
+  border-style: none;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconsearch.png);
+  background-position: 300px 1px;
+  background-repeat: no-repeat;
+  padding: 4px 20px 12px 9px;
+  margin: 0 0 0 8em;
+}
+input:focus {
+  outline: none;
+}
+
+#mediasearchinput {
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconsearch.png");
+  background-repeat: no-repeat;
+
+  padding: 12px 20px 12px 40px;
+}
+
+.mediasearchdiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.top-dropdown .top-dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+}
+
+.top-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.top-dropdown-content p {
+  padding: -2px 14px;
+  font-size: 11px;
+}
+
+.top-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.top-dropdown:hover .top-dropdown-content {
+  display: block;
+  padding: 0.5%;
+  border-radius: 6px;
+}
+
+#searchicon-media button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+#wishlist {
+  margin: 0 0 0 3%;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 11px;
+  color: #afa5a5;
+}
+.icon2 {
+  font-size: 23px;
+  margin: 10px 9px 0 13px;
+  color: grey;
+}
+.text {
+  width: 116px;
+}
+.ionbox {
+  display: flex;
+}
+.ionbox p {
+  color: #afa5a5;
+}
+.texting {
+  width: 100px;
+  cursor: pointer;
+}
+#account {
+  
+  padding: 0;
+  font-weight: 100;
+  margin: 1px 2px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#signoutbtn {
+  padding: 0;
+  font-weight: 100;
+  margin: 3px 4px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* *************Header style ends here************************* */
+/* ***********Top navigation style*************** */
+
+.dropdown {
+  background-color: white;
+  float: left;
+  margin-left: 40px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navbar {
+  padding-right: 80px;
+  margin: 0 15em;
+}
+
+.dropdown:hover .dropbtn {
+  border-bottom: 3px solid red;
+  background-color: whitesmoke;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  color: red;
+
+  box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.2);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: 530px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  justify-content: left;
+}
+
+.dropdown-content li {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  float: left;
+  left: 0px;
+}
+
+.idropdown {
+  background-color: white;
+  float: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.idropdown li {
+  cursor: pointer;
+}
+
+/* Dropdown button */
+.idropdown .idropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0px;
+  width: 100%;
+}
+
+.navbar a:hover,
+.idropdown:hover .idropbtn {
+  text-decoration: underline;
+  color: red;
+}
+
+.idropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: 530px;
+  width: 100%;
+  margin-left: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 0;
+  float: right;
+  grid-template-columns: 28% 28% 28%;
+  grid-gap: 0.5px;
+}
+
+.idropdown-content li {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: grid;
+}
+
+.idropdown-content img {
+  height: 95%;
+}
+
+.idropdown:hover .idropdown-content {
+  display: grid;
+}
+
+.idropdown:hover .idropdown-content li {
+  padding: 5px;
+  margin-left: 30px;
+  margin-top: 3.5px;
+  text-decoration: none;
+}
+
+.idropdown:hover .idropdown-content li a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.responsive-navbar {
+  display: none;
+}
+
+.responsive-navbar {
+  width: 100%;
+  padding: 15px;
+  margin-left: 3px;
+}
+
+.responsive-navbar div {
+  display: inline-block;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.responsive-navbar img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+/* ************Sign in *************** */
+
+/* ******************** signin signup container *********** */
+.container {
+  position: absolute;
+  z-index: 10000000;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  display: none;
+  background: #fff;
+  width: 350px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#show:checked ~ .container {
+  display: block;
+}
+
+.container .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .close-btn:hover {
+  color: red;
+}
+.wishlist-btn {
+  font-size: 14px;
+  margin: 4% 14px;
+}
+.container .text {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.mobile-otp,
+.otp {
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 20px;
+  margin: 2% auto 3%;
+  text-align: center;
+}
+
+.sign-up-form {
+  width: 305px;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
+  background-color: #fff;
+  padding: 13px;
+  margin: 3% auto;
+  text-align: center;
+}
+.fullname {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.fullname::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 18px;
+  height: 12px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -272px -920px
+    no-repeat;
+}
+
+.email {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.mobileno {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.mobileno::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -16px -1362px
+    no-repeat;
+}
+
+.password {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.password::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -297px -920px
+    no-repeat;
+}
+
+.sign-up-form .fullname input[type="text"],
+.sign-up-form .email input[type="email"],
+.sign-up-form .password input[type="password"],
+.sign-up-form .otpsent input[type="password"] {
+  border: 1px solid white;
+  width: 95%;
+  height: 40px;
+  outline: 0;
+  font: 14px/21px "PT Sans";
+  color: #333;
+  padding: 0 12px;
+  margin: 0 0 10px;
+}
+
+.sign-up-form .fullname input[placeholder],
+.sign-up-form .email input[placeholder],
+.sign-up-form .password input[placeholder] {
+  margin-left: 10px;
+}
+
+.sign-up-form .mobileno input[placeholder] {
+  margin-left: 10px;
+}
+
+.sign-up-form .otpsent input[placeholder] {
+  margin-left: 20px;
+}
+
+.sign-up-form .mobileno input[type="tel"] {
+  border: 1px solid white;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  color: #333;
+  padding: 0 12px;
+  margin: 0 0 10px;
+}
+
+.gender {
+  position: relative;
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 8px 0 15px 50px;
+  float: none;
+  text-align: left;
+}
+
+.gender::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 22px;
+  height: 18px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -322px -920px
+    no-repeat;
+}
+
+.continue {
+  width: 100%;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNWQzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjJjNjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.continue a {
+  color: white;
+  text-decoration: none;
+}
+
+.signinbtn {
+  width: 300px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNWQzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjJjNjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  height: 35px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.container a {
+  color: red;
+  text-decoration: none;
+}
+
+.forgot {
+  margin: 20px 25px;
+}
+.newaccount {
+  width: 300px;
+  margin: 2% auto;
+  text-align: center;
+  font: 16px/26px "PT Sans";
+  font-weight: bold;
+}
+
+.newaccount a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signinemail {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.signinemail a {
+  text-decoration: none;
+  font: 17px/26px "PT Sans";
+  font-weight: bold;
+}
+
+.social {
+  width: 300px;
+  padding: 20px;
+  margin: 3% auto 0;
+}
+
+.facebook {
+  width: 80px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  float: left;
+  margin-left: 50px;
+}
+
+.facebook img {
+  margin-left: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.google {
+  width: 80px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  float: right;
+  margin-right: 50px;
+}
+
+.google img {
+  margin-left: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.loginsocial {
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-left: 75px;
+  padding: 0px;
+  margin-top: 39px;
+}
+
+.h5signin a {
+  color: #ff5d3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* **************signup style**************** */
+#enterotp:checked ~ .container {
+  display: block;
+}
+
+#signupdiv:checked ~ .container {
+  display: block;
+}
+#entermobile:checked ~ .container {
+  display: block;
+}
+
+.container .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .text {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.account {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  font: 16px/26px "PT Sans";
+  font-weight: bold;
+}
+
+.sign-up-form {
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 20px;
+  margin: 2% auto 0;
+  text-align: center;
+}
+
+.fullname {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.fullname::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 18px;
+  height: 12px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -272px -920px
+    no-repeat;
+}
+
+.email {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.email::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 18px;
+  height: 12px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -304px -512px
+    no-repeat;
+}
+
+.mobileno {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.mobileno::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -16px -1362px
+    no-repeat;
+}
+
+.password {
+  position: relative;
+  margin: 0 16px;
+  border-bottom: 2px solid #f8f8f8;
+  padding: 6px 0;
+}
+
+.password::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/ssl-sprite.png?timeStamp=_ts@082005240124#ts_) -297px -920px
+    no-repeat;
+}
+.sign-up-form .mobileno input[type="tel"] {
+  border: 1px solid white;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  color: #333;
+  padding: 0 12px;
+  margin: 0 0 10px;
+  margin-left: 10px;
+}
+
+.gender {
+  position: relative;
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 8px 0 15px 50px;
+  float: none;
+  text-align: left;
+}
+
+.main-img {
+  margin: 0 0 0 -25px;
+}
+
+/* ************sign up style finish************ */
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    margin: 0 0 0 177%;
+  }
+  .logo img {
+    width: 200px;
+    margin-left: -35px;
+  }
+
+  #left-header img {
+    margin-left: 5px;
+  }
+
+  #right-header {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  #left-header p {
+    display: none;
+  }
+
+  #searchinput {
+    display: none;
+  }
+
+  #searchicon-media button {
+    display: block;
+    margin: 9px 0 0 340px;
+    padding: 0;
+  }
+  .searchicon {
+    margin: 2px 11px 0 5px;
+    font-size: 22px;
+  }
+  .responsive-navbar {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 0 0 0 0;
+  }
+  .logo img {
+    width: 200px;
+    margin-left: -100px;
+  }
+  #left-header {
+    width: 1.5%;
+    float: left;
+    display: flex;
+    margin: 5px 36px 0 -43px;
+  }
+  .responsive-navbar {
+    display: block;
+    padding: 0;
+  }
+
+  .responsive-navbar img {
+    height: 70px;
+    width: 70px;
+  }
+  .center {
+    height: 300px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #wishlist {
+    display: none;
+  }
+}
+
+#signinicon {
+  display: none;
+}
+#left-header-responsive {
+  display: none;
+}
+
+#searchsuggestion {
+  z-index: 10000;
+  background-color: white;
+  position: absolute;
+  margin-top: 2.5%;
+  right: 20%;
+  width: 16%;
+}
+
+#searchsuggestion div:hover {
+  color: red;
+}
+
+#searchsuggestion div {
+  padding: 0.5em;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  width: 95%;
+  text-align: center;
+}
+.top-nav-icon {
+  position: absolute;
+  top: 24%;
+  left: 31%;
+}
+@media only screen and (max-width: 400px) {
+  #main-img img {
+    width: 100px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  header {
+    padding: 0;
+    height: 40px;
+    margin: 0;
+    margin-bottom: -20px;
+  }
+  #left-header {
+    display: none;
+  }
+  #left-header-responsive {
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .responsive-navbar {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+    margin-left: -40px;
+    margin-top: -1px;
+  }
+}
+
+/* *******************Top navigation style finish******************** */
+
+#countfav,
+#countbag {
+  position: absolute;
+  margin-top: -14px;
+  margin-left: 26px;
+  background: linear-gradient(#f32170, #ff6b08, #cf23cf, #eedd44);
+  color: black;
+  border-radius: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.1rem;
+}
+#changesign {
+  width: 115px;
+}
+
+.orange-text {
+  color: #ff5d3b;
+  cursor: progress;
+}
+.icon1 {
+  margin-left: -100px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 80px;
+}
+
+#myBtn:hover {
+  background: #555;
+}
+
+#changesign p {
+  padding: 10px;
+}
+
+.idropdown img {
+  width: 80%;
+}
+.idropdown a {
+  color: black;
+}
+
+.idropdown a:hover {
+  color: red;
+}

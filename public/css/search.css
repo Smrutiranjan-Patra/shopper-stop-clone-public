@@ -1,0 +1,322 @@
+
+#topsorting {
+  margin-top: -30px;
+}
+#topsorting div {
+  display: inline-block;
+}
+#topsorting button {
+  background-color: white;
+  border: none;
+}
+#topsorting button:hover {
+  color: red;
+}
+#topbelowsort li {
+  display: inline-block;
+  padding: 0.5em;
+}
+#topbelowsort li:hover {
+  border-bottom: 3px solid red;
+}
+#topbelowsort li:active {
+  color: red;
+}
+input {
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  border: 2px solid #555;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+input[type="checkbox"]:checked {
+  background: #555;
+  background-clip: content-box;
+}
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 -2px 8px;
+}
+#topbelowsortoptions div input {
+  margin-left: 1rem;
+}
+.topbelowsortoptions_dis {
+  display: none;
+}
+#product_container {
+
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 25px;
+
+}
+#product_container #maindiv {
+  margin: top 100px;
+  border: 0.2px solid lightgray;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#product_container #maindiv div {
+  /* border-top: 0.2px solid black; */
+}
+
+#product_container p,
+h4 {
+  text-align: center;
+}
+#fav_btn{
+    
+      float: right;
+      margin-top:50px;
+      margin-right:50px;
+      background-color: white;
+      border:none;
+      font-size: 30px;
+}
+#fav_btn:hover{
+    
+   font-size: 33px;
+}
+/* ************************************************************************************************ */
+
+#sb:focus {
+outline: none;
+}
+
+input,.sh{
+appearance: none;
+display: inline-block;
+vertical-align: middle;
+}
+
+input[type="checkbox"] {
+border: 0.1px solid #555;
+width: 15px;
+height: 15px;
+padding: 4px;
+}
+input[type="checkbox"]:checked {
+background: #555;
+background-clip: content-box;
+}
+label {
+display: inline-block;
+vertical-align: middle;
+margin: 0 0 -2px 8px;
+}
+li {
+list-style-type: none;
+}
+
+#st11,#st12,#st13,#st14,#st15,#st16,#st17{
+width:200px;
+height:100px;
+overflow-y: scroll;
+display: block;
+margin-bottom: 15px;
+}  
+.button-75 {
+align-items: center;
+background-image: linear-gradient(135deg, #f34079 40%,#fc894d);
+border: 0;
+border-radius: 7px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+font-family: "Helvetica Neue",Helvetica,Arial;
+font-size: 14px;
+font-weight: 700;
+height: 54px;
+justify-content: center;
+letter-spacing: .4px;
+line-height: 1;
+width: 95%;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 3px;
+margin-top: -25px;
+text-decoration: none;
+text-transform: uppercase;
+user-select: none;
+box-sizing: border-box;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+input [type="submit"] {
+-webkit-appearance: button;
+cursor: pointer;
+}
+::-webkit-scrollbar{
+      width: 3px;
+      height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+      background-color: gray;
+      border-radius: 1px;
+  }
+
+  ::-webkit-scrollbar-track{
+      background: lightgray;
+  }
+
+  #color li{
+      list-style: none;
+      
+  }
+
+  #color > ul > li{
+      margin-bottom: 5px;
+      vertical-align: text-top;
+  }
+
+  #color a{
+      text-decoration: none;
+      color: gray;
+  }
+
+  #beige::before{
+      content: "\2022";
+      color: rgb(247, 247, 196);
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #black::before{
+      content: "\2022";
+      color: rgb(8, 8, 8);
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #blue::before{
+      content: "\2022";
+      color: rgb(11, 34, 245);
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #brown::before{
+      content: "\2022";
+      color: brown;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #green::before{
+      content: "\2022";
+      color: green;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #gray::before{
+      content: "\2022";
+      color: gray;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #orange::before{
+      content: "\2022";
+      color: orange;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #pink::before{
+      content: "\2022";
+      color: pink;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #purple::before{
+      content: "\2022";
+      color: purple;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #red::before{
+      content: "\2022";
+      color: red;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #white::before{
+      content: "\2022";
+      color: white;
+      font-size: 25px;
+      margin-right: 20PX;
+      /* border: 1px solid gray; */
+  }
+  #yellow::before{
+      content: "\2022";
+      color: yellow;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+  #navy::before{
+      content: "\2022";
+      color: navy;
+      font-size: 25px;
+      margin-right: 20PX;
+  }
+ #sb{
+  border-top-style: hidden;
+border-right-style: hidden;
+border-left-style: hidden;
+border-bottom-style: groove;
+background-color: #eee;
+ }
+ #all {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+#leftpart {
+  margin-top: 20px;
+}
+#leftpart > h4 > a {
+  text-decoration: none;
+  color: rgb(56, 55, 55);
+}
+#rightpart {
+  margin-left: 5%;
+}
+
+#mainimg{
+  margin-left: 46%;
+  margin-top: -30px;
+}
+strike{
+  color: red;
+}
+#paginationcontainer{
+  width:100%;
+  padding:5%;
+  justify-content:center;  
+}
+#paginationcontainer div {
+  margin-left: 28%;
+}
+
+#paginationcontainer div a{
+ 
+  /* font-size: 25px; */
+  text-decoration: none;
+  color: black;
+  padding: 10px 18px;
+
+}
+#paginationcontainer div a:hover{
+  background-color: #031F3B;
+  color: white;
+}
+#paginationcontainer div #current{
+  background-color: green;
+  color: white;
+}

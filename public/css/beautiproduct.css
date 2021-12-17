@@ -1,0 +1,378 @@
+#all {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.slideshow-container {
+  background-color: whitesmoke;
+  padding: 40px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: wheat;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: gray;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#st,
+#st4,
+#st5 {
+  margin: 10px;
+}
+
+#st li,
+#st4 li,
+#st5 li {
+  list-style: none;
+}
+
+#st1,
+#st2,
+#st3 {
+  margin: 10px;
+  height: 130px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+#st1 li,
+#st2 li,
+#st3 li {
+  list-style: none;
+}
+
+.sh {
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+hr {
+  width: 100%;
+  float: left;
+}
+
+.fa-search {
+  color: gray;
+  margin-top: 1px;
+  margin-left: -15px;
+}
+
+input[type="checkbox"] {
+  border: 0.1px solid #555;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+}
+#changesign hr {
+  width: 115px;
+}
+
+input[type="checkbox"]:checked {
+  background: #555;
+  background-clip: content-box;
+}
+
+#sb {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+#color li {
+  list-style: none;
+}
+
+#color > ul > li {
+  margin-bottom: 5px;
+  vertical-align: text-top;
+}
+
+#color a {
+  text-decoration: none;
+  color: gray;
+}
+
+#beige::before {
+  content: "\2022";
+  color: rgb(247, 247, 196);
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#black::before {
+  content: "\2022";
+  color: rgb(8, 8, 8);
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#blue::before {
+  content: "\2022";
+  color: rgb(11, 34, 245);
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#brown::before {
+  content: "\2022";
+  color: brown;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#green::before {
+  content: "\2022";
+  color: green;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#gray::before {
+  content: "\2022";
+  color: gray;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#orange::before {
+  content: "\2022";
+  color: orange;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#pink::before {
+  content: "\2022";
+  color: pink;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#purple::before {
+  content: "\2022";
+  color: purple;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#red::before {
+  content: "\2022";
+  color: red;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#white::before {
+  content: "\2022";
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  /* border: 1px solid gray; */
+}
+
+#yellow::before {
+  content: "\2022";
+  color: yellow;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#navy::before {
+  content: "\2022";
+  color: navy;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.range {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.range > input {
+  width: 38%;
+  height: 26px;
+}
+
+.refine {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 16px;
+  font-size: 15px;
+  background-color: #f34079;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#mainsection {
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 15% 80%;
+  gap: 60px;
+}
+#topsorting {
+  margin-top: -30px;
+}
+#topsorting div {
+  display: inline-block;
+}
+#topsorting button {
+  background-color: white;
+  border: none;
+}
+#topsorting button:hover {
+  color: red;
+}
+
+#product_container {
+  margin-left: 2%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 25px;
+}
+#product_container #maindiv {
+  /* margin: top 100px; */
+  border: 0.2px solid lightgray;
+  height: 100%;
+  border-radius: 5px;
+  width: 260px;
+  background-color: whitesmoke;
+}
+#product_container #maindiv div {
+  /* border-top: 0.2px solid black; */
+  cursor: pointer;
+}
+#product_container p,
+h4 {
+  text-align: center;
+}
+#fav_btn {
+  margin-top: 30px;
+  z-index: 100000;
+  margin-left: 210px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+#fav_btn:hover {
+  font-size: 33px;
+}
+.far {
+  font-weight: 100;
+  font-size: 20px;
+  color: gray;
+}
+
+#mainimg {
+  margin-left: 42%;
+  margin-top: -30px;
+}
+strike {
+  color: red;
+}
+
+/* ***********pagination**************** */
+#paginationcontainer {
+  width: 100%;
+  padding: 5%;
+  justify-content: center;
+}
+#paginationcontainer div {
+  margin-left: 28%;
+}
+
+#paginationcontainer div a {
+  /* font-size: 25px; */
+  text-decoration: none;
+  color: black;
+  padding: 10px 18px;
+}
+#paginationcontainer div a:hover {
+  background-color: #031f3b;
+  color: white;
+}
+#paginationcontainer div #current {
+  background-color: green;
+  color: white;
+}
+.pagenav {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#leftpart > hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#leftpart > h4 > a {
+  text-decoration: none;
+  color: rgb(56, 55, 55);
+}
+
+.left-option {
+  font-size: 11px;
+  text-align: start;
+}

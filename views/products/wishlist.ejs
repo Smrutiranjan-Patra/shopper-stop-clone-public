@@ -1,0 +1,50 @@
+<%- include('../partials/metadata', {stylesheet: "../css/wishlist.css" , footer: "../css/footer.css" , header:"../css/header.css" });
+  %>
+
+
+
+  <body>
+    <%- include('../partials/header', {}); %>
+    <div class="top"><a>Your wishlist can contain upto 50 items</a></div>
+    <div class="box">
+      <div class="left">
+        <div id="userdetails"></div>
+        <div id="listing">
+          <ul>
+            <li><a href="#">My Offers</a></li>
+            <hr>
+            <li><a href="#">My first Citizen Points</a></li>
+            <hr>
+            <li><a href="#">My first Citizen Benifits</a></li>
+            <hr>
+            <li><a href="#">My wallet</a></li>
+            <hr>
+            <li><a href="#">My Transaction</a></li>
+            <hr>
+            <li><a href="#">My wardrobe</a></li>
+            <hr>
+            <li><a href="#">My Addressbook</a></li>
+            <hr>
+            <li><a href="#">Store Locator</a></li>
+            <hr>
+            <li><a href="/" id="logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div style="text-align: center; margin: 10px">
+          <h1 style="margin-left: 38%" id="wishhead"></h1>
+        </div>
+        <div class="line"></div>
+
+        <div id="product_container"></div>
+      </div>
+    </div>
+
+    <%- include('../partials/footer', {}); %>
+  </body>
+
+  </html>
+  <script src="../script/signin.js"></script>
+  <script type="module" src="../script/wishlist.js"></script>
+ 

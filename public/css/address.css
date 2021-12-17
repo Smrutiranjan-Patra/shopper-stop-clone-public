@@ -1,0 +1,259 @@
+#nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    box-sizing: border-box;
+    padding-top: 7px;
+    display: flex;
+}
+.logo{
+    width: 280px;
+}
+
+.hr_change{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.leftBox{
+    /* border: 1px solid black; */
+    width: 465px;
+    margin-right: 90px;
+}
+.leftBox > img{
+    width: 80%;
+    margin-left: 50px;
+}
+h1{
+    color: #000;
+    font-family: proxima-nova,Arial,sans-serif;
+    letter-spacing: .3px;
+    font-size: 20px;
+}
+#lightBlue{
+    background-color: #e9f1fd;
+    width: 460px;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 3px;
+    display: none;
+}
+.fullwidth{
+    width: 450px;
+    height: 40px;
+}
+.halfwidth{
+    width: 150px;
+    height: 40px;
+}
+a{
+    color: black;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#h-img > img{
+    width: 100%;
+}
+#h-img{
+    width: 100%;
+}
+.name{
+    width: 220px;
+    height: 40px;
+}
+
+button{
+    margin-left: 190px;
+    margin-top: 10px;
+    padding: 13px;
+    width: 60%;
+    background-color: orangered;
+    background-image: linear-gradient(to right,#ff5d3b 0,#ff2c65 100%);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+ } */
+
+.method{
+    background-color: whitesmoke;
+
+    /* background-color: grey; */
+    /* height: 50px; */
+    padding: 3px;
+    /* padding-bottom: 6px; */
+    /* color: #d0d0d0; */
+}
+.giftcard{
+    width: 370px;
+    height: 50px;
+    margin-left: 20px;
+}
+#productdetails{
+    width: 100% ;
+    height: 800px;
+    /* background-color: black; */
+
+}
+#pimg{
+    height: 100px;
+}
+@media screen and (min-width: 100px) and (max-width:614px) {
+    .container{
+        display: flex;
+        width: 1000px;
+        margin: auto;
+        
+        /* border: 1px solid red; */
+        margin-top: 100px;
+        /* height: 700px; */
+    }
+    }
+  @media screen and (min-width: 614px)  {
+    .container{
+        display: flex;
+        width: 1000px;
+        margin: auto;
+        margin-left: 30%;
+        /* border: 1px solid red; */
+        margin-top: 100px;
+        /* height: 700px; */
+    }
+    
+  
+  }
+
+
+
+  #mainimg{
+    margin-left: 46%;
+    margin-top: -30px;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: 67% 29%;  
+    gap: 40px;
+    width: 90%;
+    /* height: 800px; */
+    margin: auto;
+    /* border: 1px solid black;  */
+}
+
+#cont2{
+    margin-top:20%;
+    background-color: whitesmoke;
+    padding: 20px;
+    height: 40%;
+}
+#cont2 input{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+span{
+    background-color: rgb(252, 227, 217);
+    color: orangered;
+    padding: 11.5px;
+    cursor: pointer;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+.small-size {
+    font-size: 12px;
+    color: rgb(32, 32, 32);
+  }
+  .l {
+    margin-left: 20px;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  #rightbody {
+    height: 30%;
+    width:70%;
+    margin-top: 226px;
+    margin-left: -152px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding:2rem;
+  }
+
+  #checkout,
+#disbtn,
+.btn {
+  align-items: center;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button {
+    height:2%;
+  border: none;
+}
+.small-1 {
+    font-size: 14px;
+  }
+
+  .bag {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+  }
+
+  .one2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orangered;
+    border-radius: 25px;
+    box-shadow: 25px 10px 10px 0.5px rgba(0, 0, 0, 0.596);
+    padding: 2px;
+  }
+
+  .head {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    margin: 5% 0 0;
+  } 
+
+  #checkout{
+      display: none;
+  }

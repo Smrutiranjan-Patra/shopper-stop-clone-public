@@ -1,0 +1,265 @@
+<%- include('../partials/metadata', {stylesheet: "../css/beautiproduct.css", footer: "../css/footer.css", header:"../css/header.css"}); %>
+<body onload = "senddata(`<%=JSON.stringify(product)%>`, `<%=type%>`, `<%=totalPages%>`,`<%=page%>`)">
+  <%- include('../partials/header', {}); %>
+<div class="slideshow-container">
+    <div style="color: gray; margin-bottom: 10px;">Home / Beauty / Make Up</div>
+    <div class="mySlides fade" style="display: none;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/2dd3b7c896cf5__PLP_Women_Fragrances_Desk.jpg">
+    </div>
+    <div class="mySlides fade" style="display: none;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/1d400bb73a728__Life-Kids-Sanitizer-PLP-30th-Nov__1_.jpg">
+    </div>
+    <div class="mySlides fade" style="display: block;">
+        <img width="100%"
+            src="https://cdn.dynamicyield.com/api/8770829/images/31875c5f185c8__Chambor-PLP-1232x640.jpg">
+    </div>
+</div>
+<br>
+<div style="text-align: center; margin-top: -50px; position: relative">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot active" onclick="currentSlide(3)"></span>
+</div>
+<div id="mainsection">
+    <div id="all left">
+        <div id="leftpart">
+            <hr>    
+            <h4 class="left-option"><a href="#" id="option">CATEGORIES<i class="fas fa-chevron-down" id="arrow" style="margin-left: 107px;"></i></a>
+            </h4>
+            <div id="st">
+                <li><input id="eye" type="checkbox" class="sh subcatsort"><label for="check">Eye (473)</label></li>
+                <li><input id="face" type="checkbox" class="sh subcatsort"><label for="check">Face (1,044)</label>
+                </li>
+                <li><input id="lips" type="checkbox" class="sh subcatsort"><label for="check">Lips (1,423)</label>
+                </li>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option1">SUB-CATEGORIES &nbsp;<i class="fas fa-chevron-down" id="arrow1" style="margin-left: 76px;"></i></a></h4>
+            <div id="st1">
+                <li><input id="bb" type="checkbox" class="sh subcatsort"><label for="check">BB & CC Cream
+                        (17)</label></li>
+                <li><input id="blush" type="checkbox" class="sh subcatsort"><label for="check">Blush (38)</label>
+                </li>
+                <li><input id="bronzer" type="checkbox" class="sh subcatsort"><label for="check">Bronzer
+                        (23)</label></li>
+                <li><input id="compact" type="checkbox" class="sh subcatsort"><label for="check">Compact
+                        (46)</label></li>
+                <li><input id="concealer" type="checkbox" class="sh subcatsort"><label for="check">Concealer
+                        (37)</label></li>
+                <li><input id="eyes" type="checkbox" class="sh subcatsort"><label for="check">Eye Liner (48)</label>
+                </li>
+                <li><input id="eyes" type="checkbox" class="sh subcatsort"><label for="check">Eye Shadow
+                        (66)</label></li>
+                <li><input id="eyeb" type="checkbox" class="sh subcatsort"><label for="check">Eyebrows (22)</label>
+                </li>
+                <li><input id="found" type="checkbox" class="sh subcatsort"><label for="check">Foundations
+                        (241)</label></li>
+                <li><input id="kits" type="checkbox" class="sh subcatsort"><label for="check">Kits (17)</label></li>
+                <li><input id="kohls" type="checkbox" class="sh subcatsort"><label for="check">Kohls & Kajal
+                        (37)</label></li>
+                <li><input id="lipb" type="checkbox" class="sh subcatsort"><label for="check">Lip Balm (46)</label>
+                </li>
+                <li><input id="lipg" type="checkbox" class="sh subcatsort"><label for="check">Lip Gloss (46)</label>
+                </li>
+                <li><input id="lipl" type="checkbox" class="sh subcatsort"><label for="check">Lipliner (45)</label>
+                </li>
+                <li><input id="lips" type="checkbox" class="sh subcatsort"><label for="check">Lipstick (623)</label>
+                </li>
+                <li><input id="Llip" type="checkbox" class="sh subcatsort"><label for="check">Liquid Lipstick
+                        (108)</label></li>
+                <li><input id="makeup" type="checkbox" class="sh subcatsort"><label for="check">Makeup Remover
+                        (8)</label></li>
+                <li><input id="mascara" type="checkbox" class="sh subcatsort"><label for="check">Mascara
+                        (21)</label></li>
+                <li><input id="primers" type="checkbox" class="sh subcatsort"><label for="check">Primers
+                        (27)</label></li>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option2">BRANDS &nbsp;&nbsp;<i class="fas fa-chevron-down" id="arrow2" style="margin-left: 123px;"></i></a></h4>
+            <div id="st2">
+                <li><div style="display: flex;"><input id="sb" type="text" placeholder="Search Brands..." /><i
+                            class="fas fa-search"></i></div></li>
+                <li><input type="checkbox" class="sh brand"><label for="check">ARCELIA (17)</label></li>
+                <li><input type="checkbox" class="sh brand"><label for="check">BASICARE (2)</label></li>
+                <li><input type="checkbox" class="sh brand"><label for="check">BOBBI BROWN (190)</label></li>
+                <li><input type="checkbox" class="sh brand"><label for="check">CHAMBOR (162)</label></li>
+                <li><input type="checkbox" class="sh brand"><label for="check">CLINIQUE (84)</label></li>
+                <li><input id="COLORBAR" type="checkbox" class="sh brand"><label for="check">COLORBAR (246)</label>
+                </li>
+                <li><input id="ELIZABETH" type="checkbox" class="sh brand"><label for="check">ELIZABETH ARDEN
+                        (54)</label></li>
+                <li><input id="ESTEE" type="checkbox" class="sh brand"><label for="check">ESTEE LAUDER (186)</label>
+                </li>
+                <li><input id="FACES" type="checkbox" class="sh brand"><label for="check">FACES (230)</label></li>
+                <li><input id="HOUSE" type="checkbox" class="sh brand"><label for="check">HOUSE OF BEAUTY
+                        (1)</label></li>
+                <li><input id="JUST" type="checkbox" class="sh brand"><label for="check">JUST HERBS (33)</label>
+                </li>
+                <li><input id="KAMA" type="checkbox" class="sh brand"><label for="check">KAMA AYURVEDA (3)</label>
+                </li>
+                <li><input id="KARA" type="checkbox" class="sh brand"><label for="check">KARA (1)</label></li>
+                <li><input id="LAKME" type="checkbox" class="sh brand"><label for="check">LAKME (369)</label></li>
+                <li><input id="LOREAL" type="checkbox" class="sh brand"><label for="check">LOREAL (95)</label></li>
+                <li><input id="LOTUS" type="checkbox" class="sh brand"><label for="check">LOTUS HERBALS (36)</label>
+                </li>
+                <li><input id="MAC" type="checkbox" class="sh brand"><label for="check">MAC (676)</label></li>
+                <li><input id="MAYBELLINE" type="checkbox" class="sh brand"><label for="check">MAYBELLINE
+                        (134)</label></li>
+                <li><input id="OMORFEE" type="checkbox" class="sh brand"><label for="check">OMORFEE (7)</label></li>
+                <li><input id="PHY" type="checkbox" class="sh brand"><label for="check">PHY (6)</label></li>
+                <li><input id="PLUM" type="checkbox" class="sh brand"><label for="check">PLUM (7)</label></li>
+                <li><input id="REVLON" type="checkbox" class="sh brand"><label for="check">REVLON (118)</label></li>
+                <li><input id="SKOG" type="checkbox" class="sh brand"><label for="check">SKOG (1)</label></li>
+                <li><input id="SMASHBOX" type="checkbox" class="sh brand"><label for="check">SMASHBOX (61)</label>
+                </li>
+                <li><input id="SUGAR" type="checkbox" class="sh brand"><label for="check">SUGAR (98)</label></li>
+                <li><input id="THE FACE SHOP" type="checkbox" class="sh brand"><label for="check">THE FACE SHOP
+                        (1)</label></li>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option3">OFFERS &nbsp;<i class="fas fa-chevron-down" id="arrow3" style="margin-left: 128px;"></i></a></h4>
+            <div id="st3">
+                <li></li><input type="checkbox" id="30" class="sh discountsort"><label for="check">Flat 30% Off
+                    (1,257)</label></li>
+                <li><input type="checkbox" id="25" class="sh discountsort"><label for="check">Flat 25% Off
+                        (65)</label></li>
+                <li><input type="checkbox" id="51" class="sh discountsort"><label for="check">Flat 51% Off
+                        (488)</label></li>
+                <li><input type="checkbox" id="63" class="sh discountsort"><label for="check">Flat 63% Off
+                        (103)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 1 @ 40% Off, Buy 2 @ 50%
+                        Off (33)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 3 Get 2 Free (47)</label>
+                </li>
+                <li><input type="checkbox" id="999" class="sh discountsort"><label for="check">Flat
+                        Rs.999/-(44)</label></li>
+                <li><input type="checkbox" id="899" class="sh discountsort"><label for="check">Flat Rs. 899/-
+                        (52)</label></li>
+                <li><input type="checkbox" id="199" class="sh discountsort"><label for="check">Flat Rs. 199/-
+                        (1)</label></li>
+                <li><input type="checkbox" id="299" class="sh discountsort"><label for="check">Flat Rs. 299/-
+                        (13)</label></li>
+                <li><input type="checkbox" id="45" class="sh discountsort"><label for="check">Flat 15% Off
+                        (307)</label></li>
+                <li><input type="checkbox" id="35" class="sh discountsort"><label for="check">Flat 35% Off
+                        (64)</label></li>
+                <li><input type="checkbox" id="45" class="sh discountsort"><label for="check">Flat 45% Off
+                        (277)</label></li>
+                <li><input type="checkbox" id="699" class="sh discountsort"><label for="check">Flat Rs.699/-
+                        (1)</label></li>
+                <li><input type="checkbox" id="1999" class="sh discountsort"><label for="check">Flat Rs. 1999/-
+                        (1)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 2 Get 1 Free (47)</label>
+                </li>
+                <li><input type="checkbox" id="799" class="sh discountsort"><label for="check">Flat Rs. 799/-
+                        (5)</label></li>
+                <li><input type="checkbox" id="599" class="sh discountsort"><label for="check">Flat Rs. 599/-
+                        (1)</label></li>
+                <li><input type="checkbox" id="999" class="sh discountsort"><label for="check">Flat Rs. 999/-
+                        (1)</label></li>
+                <li><input type="checkbox" id="499" class="sh discountsort"><label for="check">Flat Rs. 499/-
+                        (4)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">BUY FOR Rs.1999 GET Rs.500 OFF
+                        (2)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">BUY FOR Rs.3499 GET Rs.1000
+                        OFF (2)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">BUY FOR Rs.4999 GET Rs.1500
+                        OFF (2)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 1 Get 15% Off & Buy 2 Get
+                        25% Off (59)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 1 Get 25% Off & Buy 2 Get
+                        40% Off (226)</label></li>
+                <li><input type="checkbox" class="sh discountsort"><label for="check">Buy 2 Get Rs. 750/- Off
+                        (32)</label></li>
+                <li><input type="checkbox" id="179" class="sh discountsort"><label for="check">Flat Rs. 179/-
+                        (2)</label></li>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option4">COLORS &nbsp;&nbsp;<i class="fas fa-chevron-down" id="arrow4" style="margin-left: 123px;"></i></a></h4>
+            <div id="color">
+                <ul>
+                    <li id="beige" class="colorselect"><a href="#">Beige</a></li>
+                    <li id="black" class="colorselect"><a href="#">Black</a></li>
+                    <li id="blue" class="colorselect"><a href="#">Blue</a></li>
+                    <li id="brown" class="colorselect"><a href="#">Brown</a></li>
+                    <li id="green" class="colorselect"><a href="#">Green</a></li>
+                    <li id="gray" class="colorselect"><a href="#">Gray</a></li>
+                    <li id="orange" class="colorselect"><a href="#">Orange</a></li>
+                    <li id="pink" class="colorselect"><a href="#">Pink</a></li>
+                    <li id="purple" class="colorselect"><a href="#">Purple</a></li>
+                    <li id="red" class="colorselect"><a href="#">Red</a></li>
+                    <li id="white" class="colorselect"><a href="#">White</a></li>
+                    <li id="yellow" class="colorselect"><a href="#">Yellow</a></li>
+                    <li id="navy" class="colorselect"><a href="#">Navy</a></li>
+                </ul>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option5">DELIVERY TYPE &nbsp;&nbsp;<i class="fas fa-chevron-down" id="arrow5" style="margin-left: 86px;"></i></a></h4>
+            <div id="st4">
+                <li><input id="express" type="checkbox" class="sh"><label for="check">Express Store Pick up
+                        (2,999)</label></li>
+            </div>
+            <hr>
+            <h4 class="left-option"><a href="#" id="option6">PRICE &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down" id="arrow6" style="margin-left: 134px;"></i></a></h4>
+            <div id="st5">
+                <li><input type="checkbox" class="sh pricerange" id="51-100"><label for="check">51-100 (5)</label>
+                </li>
+                <li><input type="checkbox" class="sh pricerange" id="101-500"><label for="check">101-500
+                        (1,132)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="501-1000"><label for="check">501-1000
+                        (2,524)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="1001-2000"><label for="check">1001-2000
+                        (4,668)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="2001-3000"><label for="check">2001-3000
+                        (3,041)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="3001-5000"><label for="check">3001-5000
+                        (1,470)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="5001-10000"><label for="check">5001-10000
+                        (374)</label></li>
+                <li><input type="checkbox" class="sh pricerange" id="10001-Infinity"><label for="check">10001 and
+                        above (82)</label></li>
+            </div>
+            <hr>
+            <h4 style="margin-left: -60px;">Enter a price range</h4>
+
+            <div class="range">
+                <input type="text" id="minamount" placeholder="&#8377;">&nbsp;to
+                <input type="text" id="maxamount" placeholder="&#8377;">
+            </div>
+            <div id="refinesearch" class="refine" onclick="">REFINE SEARCH</div>
+            <hr>
+        </div>
+    </div>
+    <div id="right">
+        <h3 style="text-align: left; margin-bottom: 35px;">BEAUTY</h3>
+        <div id="topsorting">
+            <div>
+                <p>Sort by:</p>
+            </div>
+            <div><button id="relevence">Relevance</button>|</div>
+            <div><button id="Popular">Popular</button>|</div>
+            <div><button id="New">New</button>|</div>
+            <div><button id="Discount">Discount</button>|</div>
+            <div><button id="Best_Seller">Best Seller</button>|</div>
+            <div>
+                Price:<button id="sortlow">Low</button>|<button id="sorthigh">
+                    High
+                </button>
+            </div>
+        </div>
+        <hr style="width:100%" />
+        <div id="product_container"> </div>
+        <div id="paginationcontainer" class="pagination_section"></div>
+    </div>
+</div>
+<div id="foo">
+        <%- include('../partials/footer', {}); %>
+</div>
+</body>
+
+</html>
+
+<script  src="../script/beautiproduct.js"></script>
+<script  src="../script/signin.js"></script>

@@ -1,0 +1,399 @@
+#topsorting {
+  margin-top: -30px;
+}
+#topsorting div {
+  display: inline-block;
+}
+#topsorting button {
+  background-color: white;
+  border: none;
+}
+#topsorting button:hover {
+  color: red;
+}
+#topbelowsort li {
+  display: inline-block;
+  padding: 0.5em;
+  cursor: pointer;
+}
+#topbelowsort li:hover {
+  border-bottom: 3px solid red;
+}
+#topbelowsort li:active {
+  color: red;
+}
+input {
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  border: 2px solid #555;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+input[type="checkbox"]:checked {
+  background: #555;
+  background-clip: content-box;
+}
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 -2px 8px;
+}
+#topbelowsortoptions div input {
+  margin-left: 1rem;
+}
+.topbelowsortoptions_dis {
+  display: none;
+}
+#product_container {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 25px;
+}
+#product_container #maindiv {
+  /* margin-bottom: -12px; */
+  border: 0.2px solid lightgray;
+  border-radius: 5px;
+  height: 100%;
+  width: 260px;
+  background-color: whitesmoke;
+}
+
+#product_container #maindiv div {
+  /* border-top: 0.2px solid black; */
+  cursor: pointer;
+  
+}
+
+#product_container p,
+h4 {
+  text-align: center;
+}
+#fav_btn {
+  margin-top: 12px;
+  z-index: 100000;
+  margin-left: 213px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+#fav_btn:hover {
+  font-size: 33px;
+}
+
+.far {
+  font-weight: 100;
+  font-size: 20px;
+  color: gray;
+}
+/* ************************************************************************************************ */
+
+#sb:focus {
+  outline: none;
+}
+
+input,
+.sh {
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  border: 0.1px solid #555;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+}
+input[type="checkbox"]:checked {
+  background: #555;
+  background-clip: content-box;
+}
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 -2px 8px;
+}
+li {
+  list-style-type: none;
+}
+
+#st11,
+#st12,
+#st13,
+#st14,
+#st15,
+#st16,
+#st17 {
+  width: 200px;
+  height: 100px;
+  overflow-y: scroll;
+  display: block;
+  margin-bottom: 15px;
+}
+.button-75 {
+  align-items: center;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: 0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  width: 95%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: -20px;
+}
+input [type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+#color li {
+  list-style: none;
+}
+
+#color > ul > li {
+  margin-bottom: 5px;
+  vertical-align: text-top;
+}
+
+#color a {
+  text-decoration: none;
+  color: gray;
+}
+
+#beige::before {
+  content: "\2022";
+  color: rgb(247, 247, 196);
+  font-size: 25px;
+  margin-right: 20px;
+}
+#black::before {
+  content: "\2022";
+  color: rgb(8, 8, 8);
+  font-size: 25px;
+  margin-right: 20px;
+}
+#blue::before {
+  content: "\2022";
+  color: rgb(11, 34, 245);
+  font-size: 25px;
+  margin-right: 20px;
+}
+#brown::before {
+  content: "\2022";
+  color: brown;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#green::before {
+  content: "\2022";
+  color: green;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#gray::before {
+  content: "\2022";
+  color: gray;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#orange::before {
+  content: "\2022";
+  color: orange;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#pink::before {
+  content: "\2022";
+  color: pink;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#purple::before {
+  content: "\2022";
+  color: purple;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#red::before {
+  content: "\2022";
+  color: red;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#white::before {
+  content: "\2022";
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  /* border: 1px solid gray; */
+}
+#yellow::before {
+  content: "\2022";
+  color: yellow;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#navy::before {
+  content: "\2022";
+  color: navy;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#sb {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+#prodimg {
+  height: 430px;
+}
+#mainimg {
+  margin-left: 42%;
+  margin-top: -30px;
+}
+strike {
+  color: red;
+}
+
+#paginationcontainer {
+  width: 100%;
+  padding: 5%;
+  justify-content: center;
+}
+#paginationcontainer div {
+  margin-left: 28%;
+}
+
+#paginationcontainer div a {
+  /* font-size: 25px; */
+  text-decoration: none;
+  color: black;
+  padding: 10px 18px;
+}
+#paginationcontainer div a:hover {
+  background-color: #031f3b;
+  color: white;
+}
+#paginationcontainer div #current {
+  background-color: green;
+  color: white;
+}
+/* ---------------------------------------------------------------- */
+
+.slideshow-container {
+  background-color: whitesmoke;
+  padding: 40px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: wheat;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: gray;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#all {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+#leftpart {
+  margin-top: 20px;
+}
+.left-option {
+  font-size: 11px;
+  text-align: start;
+}
+#leftpart > h4 > a {
+  text-decoration: none;
+  color: rgb(56, 55, 55);
+}
+#rightpart {
+  margin-left: 5%;
+}
+#product_container {
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  width: 95%;
+}

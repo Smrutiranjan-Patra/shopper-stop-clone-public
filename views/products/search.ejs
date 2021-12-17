@@ -1,0 +1,16 @@
+<%- include('../partials/metadata', {stylesheet: "../css/search.css", footer: "../css/footer.css", header:"../css/header.css"}); %>
+<body onload = "senddata(`<%=JSON.stringify(product)%>`,`<%=search%>`, `<%=page%>`, `<%=totalPages%>`)"> 
+    <%- include('../partials/header', {}); %>
+  <div id="all">
+    <%- include('../partials/leftsort', {}); %>
+    <%- include('../partials/uppersort', {}); %>
+    
+ 
+</div>
+<%- include('../partials/footer', {}); %>
+</body>
+
+</html>
+<script src="../script/signin.js"></script>
+
+<script src="../script/search.js"></script>

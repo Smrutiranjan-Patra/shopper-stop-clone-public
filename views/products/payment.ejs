@@ -1,0 +1,80 @@
+<%- include('../partials/metadata', {stylesheet: "/../css/payment.css", footer: "/../css/footer.css", header:false}); %>
+
+
+<body>
+    <div id="topofpage">
+      <i id="backpage" class="material-icons" style="font-size: 36px"
+        >chevron_left</i
+      >
+      <div id="mainimg">
+        <a href="/"
+          ><img
+            src="https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/sslogo.svg"
+        /></a>
+      </div>
+    </div>
+    <div id="payment">
+      <h3>MAKE PAYMENT</h3>
+      <p id="totalpayble"><b>Payable Amount: &#8377;736.51</b></p>
+    </div>
+    <div id="h-img">
+      <img
+        src="https://sslimages.shoppersstop.com/sys-master/root/hff/heb/16687090991134/Cart-Pg-strip.jpg"
+      />
+    </div>
+
+    <div id="cont">
+      <div id="cont1">
+  
+        <div id="line"></div>
+        <div id="pay-box">
+          <div id="method">
+            <i class="far fa-credit-card">&nbsp;&nbsp;Credit / Debit Card</i>
+            <i class="fas fa-university">&nbsp;&nbsp;Netbanking</i>
+            <i class="fab fa-paypal">&nbsp;&nbsp;UPI</i>
+            <i class="fas fa-wallet">&nbsp;&nbsp;Wallets</i>
+          </div>
+          <div id="card">
+            <h2 style="font-size: 20px">Enter Debit / Credit Card Details</h2>
+            <form autocomplete="off" id="myForm" action="">
+              <label>Card Number</label><br />
+              <input 
+                type="tel"
+                maxlength="16"
+                id="C-num"
+                id="card"
+                placeholder="Enter card number here"
+                required 
+
+              /><br />
+              <div id="sec">
+                <label>Expiry</label>
+                <label style="margin-left: 20px">CVV</label>
+                <input maxlength="5" id="date" type="text" placeholder="MM / YY" required/>
+                <input
+                id="cvv"
+                  style="margin-left: 20px"
+                  type="password"
+                  maxlength="3"
+                  placeholder="CVV"
+                  required
+                />
+              </div>
+              <input id="express" type="checkbox" /><label for="check"
+                >Save this card for faster payments</label
+              ><br />
+
+              <button><b>Proceed to pay</b></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <%- include('../partials/payment', {}); %>
+    </div>
+
+    <div id="foo">
+      <%- include('../partials/footer', {}); %>
+    </div>
+  </body>
+</html>
+<script type="module" src="/../script/payment.js"></script>

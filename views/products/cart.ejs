@@ -1,0 +1,90 @@
+<%- include('../partials/metadata', {stylesheet: "../css/cart.css", footer: "../css/footer.css", header:"../../css/cart.css"}); %>
+
+<link rel="stylesheet" href="../../css/footer.css">
+<body onload="senddata(`<%=user%>`)">
+    <div id="topofpage">
+        <i id="backpage" class="material-icons" style="font-size:36px">chevron_left</i>
+        <div id="mainimg"class="top-img">
+            <a href= "/"><img  src="https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/sslogo.svg" /></a>
+        </div>
+    </div>
+    <div><img
+            src="https://sslimages.shoppersstop.com/sys-master/root/h35/hf7/26522404061214/CART10-Coupon-Code-Strip-Web.jpg" style="width:100% "
+            alt="">
+        </div>
+        <h1 style="margin-left: 50%; ">Shopping Bag</h1>
+    <div id="emptymsg">
+        
+        <p>Your shopping bag is empty</p>
+        <a href="/"><input type="submit" value="CONTINUE SHOPPING"
+                style="color: rgb(247, 95, 95); border:1px solid rgb(252, 193, 186);background-color:white;height:35px;margin-top: 15px;"></a>
+    </div>
+
+    <div id="cartpagebody">
+        <div id="leftbody">
+            <div class="container">
+                <div class="one1">
+                    <div class="top">
+                        <div class="bag top1">
+                         
+                            <div class="gap"></div>
+                            <div>
+                                <h4 id="totalprice"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pincode">
+                        <div class="margin">
+                            <p>&nbsp;&nbsp;&nbsp;Delivery &amp; Express Store Pick Up</p>
+                            <form id="delivery_pincode_id" class="delivery_pincode_id">
+                                <div class="check" style="display:flex;column-gap: 15px;margin-left: 2.5%;">
+                                    <input type="tel" id="pinvalue" name="pincode" placeholder="Enter Pincode"
+                                        maxlength="6" value="" style="height: 30px;width:250px;border-radius: 10px;"> <input id="pincode"
+                                        type="submit" value="CHECK" class="btn"
+                                        style="height:35px;">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bag margin">
+                        <div style="margin-right: 400px; margin-left:50px">
+                            <h4>Products</h5>
+                        </div>
+                        <div class="none delivery" style="margin-left: 150px;">
+                            <h4>Delivery & Availability</h5>
+                        </div>
+                        <div class="none amount" style="margin-left: 110px;">
+                            <h4>Amount </h4>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    <div id="itemshere" class="bag margin">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="line"></div>
+            <div style="width:100%" class="margin"><img
+                    src="https://sslimages.shoppersstop.com/sys-master/images/hba/h99/8841824698398/shopping-bag-promo.jpg"
+                    style="width:100%" alt=""></div>
+        </div>
+        <%- include('../partials/payment', {}); %>
+        
+    </div>
+    <div id="foo">
+        <%- include('../partials/footer', {}); %>
+  </div>
+  
+</body>
+<script src="../script/cart.js"></script>
+<script src="../../script/cart.js"></script>
+
+
+
+</html>
+

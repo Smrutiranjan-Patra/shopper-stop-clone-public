@@ -1,0 +1,165 @@
+#mainimg{
+    margin-left: 46%;
+    margin-top: -30px;
+}
+
+.cont {
+    /* height: -1%; */
+    display: flex;
+    margin-left: 3%;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.small-imgs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.small-imgs img {
+    height: 90px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-imgs {
+    /* height: 100%; */
+    margin-left: 2%;
+}
+
+.text {
+    margin-left: 50px;
+    margin-top: -20px;
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+.text::-webkit-scrollbar{
+    display: none;
+}
+
+.type {
+    margin-top: -20px;
+}
+
+.p-text{
+    color: gray;
+    margin-top: -15px;
+}
+
+.price-box {
+    display: flex;
+}
+
+.price-box>div>span {
+    margin-left: 10px;
+    margin-top: -1px;
+}
+#imgbox{
+    height: 500px;
+}
+
+.price {
+    font-size: 20px;
+    margin-top: -3px;
+    margin-right: 12px;
+}
+
+.size{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    gap: 10px;
+}
+
+.size > div{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 7px;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+.bag{
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.icon-box{
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13%;
+    margin-top: 20px;
+    /* gap: 50px; */
+}
+.icon{
+    display: flex;
+    width: 150px;
+    color: gray;
+}
+.fas{
+    font-size: 25px;
+    margin-right: 8px;
+}
+.I-text{
+    margin-left: 15px;
+    margin-top: -2.5px;
+    font-size: 13px;
+}
+
+.ship{
+    width: 50px;
+}
+
+.line{
+    border: 1px solid rgb(201, 198, 198);
+    height: 17px;
+    width: 0px;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+input{
+    margin-right: 10px;
+    background-color: rgb(248, 247, 247);
+    border: 1px solid rgb(182, 181, 181);
+    padding: 13px;
+    width: 250px;
+    border-radius: 5px;
+}
+.icon1{
+    display: flex;
+    margin-top: 20px;
+    /* font-size: 20px; */
+}
+
+.fa-truck{
+    font-size: 20px;
+}
+
+h5{
+    margin-top: 4px;
+}
+#new{
+    background-color: orangered;
+    padding: 5px;
+    color: white;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+.p1{
+    margin-top: 1px;
+}
+
+#policy{
+    color: orangered;
+    cursor: pointer;
+}

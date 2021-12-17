@@ -1,0 +1,22 @@
+<%- include('partials/metadata', {stylesheet: "false", footer: "false", header:false}); %>
+<body style="background-color: silver;">
+    <div id="topofpage">
+        <i id="backpage" class="material-icons" style="font-size:36px">chevron_left</i>
+    <div  id="mainimg">
+        <a href="/"
+          ><img style="margin-left: 43%;"
+            src="https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/sslogo.svg"
+        /></a>
+      </div>
+    </div>
+  <img style="margin-left: 33%; margin-top:2%" src="https://www.adroitfinancial.com/assets/images/page_404.gif">
+</body>
+</html>
+<script>
+    let backbtn = document.getElementById("backpage");
+    backbtn.addEventListener("click", function (e) {
+              window.history.go(-1);
+})
+    
+
+</script>

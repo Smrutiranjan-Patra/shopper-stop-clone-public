@@ -41,7 +41,7 @@ Now you can run "npm start" in the terminal and the application should work.
 Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. There are 86 stores across 40 cities in India, with clothing, accessories, handbags, shoes, jewellery, fragrances, cosmetics, health and beauty products, home furnishing, and decor products.
 
 ## Technology
-# The application is built with:
+### The application is built with:
 
 * Node.js version 12.16.3
 * Mongoose 6.1.1
@@ -52,7 +52,7 @@ Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. T
 
 ## Added Functionalities
 
-# The application displays a virtual bags store that contains virtual products and contact information. User can do the following:
+### The application displays a virtual bags store that contains virtual products and contact information. User can do the following:
 
 * Create an account, login or logout
 * Browse available products
@@ -70,17 +70,17 @@ Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. T
 
 ## Database
 
-# All the models can be found in the models directory created using mongoose.
+### All the models can be found in the models directory created using mongoose.
 
-# User Schema:
+#### User Schema:
 * email (String)
 * password (String)
 
-# Category Schema:
+#### Category Schema:
 * title (String)
 * slug (String)
 
-# Product Schema:
+#### Product Schema:
 * Product_Id (String)
 * title (String)
 * imagePath (Array)

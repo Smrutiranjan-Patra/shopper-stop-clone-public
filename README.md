@@ -14,7 +14,7 @@ This is the clone of [SHOPPERS STOP](https://www.shoppersstop.com) build using N
 
 ## Demo
 
-![Home-Page](https://github.com/Smrutiranjan-Patra/shopper-stop-clone-public/blob/main/images/home.png?raw=true
+![Home-Page](https://github.com/Smrutiranjan-Patra/shopper-stop-clone-public/blob/main/images/home.png?raw=true)
 
 The application is deployed to Heroku and can be accessed through the following link:
 [Shoppers Stop](https://shopper-stop-clone.herokuapp.com)
@@ -112,7 +112,7 @@ Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. T
 ![Wishlist](https://github.com/Smrutiranjan-Patra/shopper-stop-clone-public/blob/main/images/wishlist.png?raw=true)
 
 
-![Product Description](https://github.com/Smrutiranjan-Patra/shopper-stop-clone-public/blob/main/images/decription.png?raw=true)
+![Product Description](https://github.com/Smrutiranjan-Patra/shopper-stop-clone-public/blob/main/images/description.png?raw=true)
 
 
 

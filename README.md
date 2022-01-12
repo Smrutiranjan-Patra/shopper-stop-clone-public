@@ -58,7 +58,7 @@ Shoppers Stop is an Indian department store chain, owned by the K Raheja Corp. T
 * Browse available products
 * Add products to the shopping cart and wishlist
 * Delete products from the shopping cart and wishlist
-* Display the shopping cart and wishlist
+* Display the shopping cart and wishlist.
 * To checkout, a user must be logged in
 
 

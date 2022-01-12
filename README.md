@@ -27,7 +27,7 @@ The website resembles a real store and you can login using google authentication
 To run this application, you have to set your own environmental variables. For security reasons, some variables have been hidden from view and used as environmental variables with the help of dotenv package. Below are the variables that you need to set in order to run the application:
 
 * MONGO_URI: this is the connection string of your MongoDB Atlas database.
-* JWT_ACCESS_KEY: This is a key used to authencticate user. You can put any strings here.
+* JWT_ACCESS_KEY: This is a key which is used to authencticate user. You can put any strings here.
 * JsonWebToken: This is a token created by JWT library used to authenticate user. You can put any strings here.
 * GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET: These credentials can be created using Google cloud platform. This helps to authenticate a user using Google OAuth.4
 

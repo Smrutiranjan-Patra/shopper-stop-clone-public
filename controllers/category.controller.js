@@ -13,7 +13,7 @@ router.post('', async function (req, res) {
 
     }
 
-})
+});
 router.get("", async (req, res) => {
     try {
         console.log("hi")

@@ -8,7 +8,7 @@ router.post('', async function (req, res) {
         res.status(201).send(category)
     } catch (e) {
         res.status(500).json({
-            status: e
+            status:e.message
         })
 
     }
